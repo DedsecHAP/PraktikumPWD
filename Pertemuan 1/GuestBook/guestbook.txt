@@ -1,0 +1,3 @@
+Hamas Ardyan Prasetyo|Yogyakarta|hamas@gmail.com|Single|Sample Input Guestbook 1
+Mourez Eldrik Khairan|Bekasi|eldrik@gmail.com|Single|Sample Input Guestbook 2
+Muhid|Lombok Tengah|muhid@gmail.com|Single|Sample Input Guestbook 3

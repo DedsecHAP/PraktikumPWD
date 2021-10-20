@@ -39,22 +39,30 @@
             </tr>
         </table>
     </form>
-    <?php
-    // Check If form submitted, insert form data into users table.
+        <?php
+        // Menjalankan perintah didalam if apabila $_POST['submit'], memiliki nilai.
         if(isset($_POST['Submit'])) {
+
+            // Dibawah adalah variabel yang digunakan untuk menampung nilai dari
+            // nilai yang dilempar dengan method POST
             $nim = $_POST['nim'];
             $nama = $_POST['nama'];
             $jkel = $_POST['jkel'];
             $alamat = $_POST['alamat'];
             $tgllhr = $_POST['tgllhr'];
             $prodi = $_POST['prodi'];
-            // include database connection file
+            
+            // Memanggil kode yang terdapat di file koneksi.php
             include_once("koneksi.php");
-            // Insert user data into table
+
+            // Dengan fungsi mysqli_query, mengirim perintah sql ke database, dimana 
+            // querynya adalah, menambahkan value dari variable-variable diatas 
+            // ke table Mahasiswa
             $result = mysqli_query($con, "INSERT INTO mahasiswa(nim,nama,jkel,alamat,Tgl_lahr, Prodi) VALUES('$nim','$nama', '$jkel','$alamat','$tgllhr', '$prodi')");
-            // Show message when user added
+            
+            // Menampilkan pesan data berhasil disimpan
             echo "Data berhasil disimpan. <a href='index.php'>View Users</a>";
         }
-    ?>
+        ?>
 </body>
 </html>

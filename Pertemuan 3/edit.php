@@ -14,20 +14,23 @@
         $prodi  = $user_data['Prodi'];
 ?>
 <?php
-    // include database connection file
-
-    // Check if form is submitted for user update, then redirect to homepage after update
+    // Menjalankan Perintah didalam if apabila $_POST['update'] berisi value.
     if(isset($_POST['update']))
     {
+        // Variable-variable untuk menampung nilai yang dilempar dengan method POST
         $nim    = $_POST['nim'];
         $nama   = $_POST['nama'];
         $jkel   = $_POST['jkel'];
         $alamat = $_POST['alamat'];
         $tgllhr = $_POST['tgllhr'];
         $prodi  = $_POST['prodi'];
-        // update user data
+        
+        // Dengan fungsi mysqli_query, mengirim perintah sql ke database dengan 
+        // query untuk melakukan UPDATE data pada table mahasiswa dengan
+        // paramter variable-variable diatas
         $result = mysqli_query($con, "UPDATE Mahasiswa SET Nama='$nama',Jkel='$jkel',Alamat='$alamat',Tgl_Lahr='$tgllhr', Prodi = '$prodi' WHERE Nim='$nim'");
-        // Redirect to homepage to display updated user in list
+        
+        // perintah untuk melakukan redirect halaman ke index.php
         header("Location: index.php");
     }
 ?>

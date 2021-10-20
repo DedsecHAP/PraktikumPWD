@@ -1,10 +1,16 @@
 <?php
-    // include database connection file
+    // Memanggil kode yang berada pada file koneksi.php
     include_once("koneksi.php");
-    // Get id from URL to delete that user
+
+    // variable untuk menampung nilai yang dilempar menggunakan
+    // method GET
     $nim = $_GET['nim'];
-    // Delete user row from table based on given id
+
+    // Dengan fungsi mysqli_query, mengirim perintah sql ke database dengan
+    // query untuk melakukan hapus data pada table mahasiswa dimana data yang
+    // dihapus memiliki nilai dari variable $nim.
     $result = mysqli_query($con, "DELETE FROM mahasiswa WHERE nim='$nim'");
-    // After delete redirect to Home, so that latest user list will be displayed.
+    
+    // Perintah untuk melakukan redirect, ke halaman index.php
     header("Location:index.php?");
 ?>

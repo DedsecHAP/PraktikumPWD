@@ -6,6 +6,8 @@
         $pass=md5($_POST['paswd']);
         $sql="SELECT * FROM users WHERE UserID = '$id_user' AND Password ='$pass'";
     
+        // Kondisi untuk mencocokan kode captcha yang dikiirmkan dari halaman login menggunakan
+        // method POST dengan kode captcha yang sudah tersimpan pada SESSION
         if ($_POST["captcha_code"] == $_SESSION["captcha_code"]) {
             $login=mysqli_query($con,$sql);
             $ketemu=mysqli_num_rows($login);

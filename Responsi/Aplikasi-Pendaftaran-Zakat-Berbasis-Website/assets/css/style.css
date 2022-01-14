@@ -1,0 +1,418 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.Nav-bar {
+  position: absolute;
+  margin: 0;
+  height: 80px;
+  width: 100%;
+  background-color: #2EB100;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Nav-bar .logo {
+  float: left;
+  height: 100%;
+  width: 80px;
+  margin: 2px 0 2px 10px;
+  background-image: url("../img/logo_masjid.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.Nav-bar .judul {
+  float: left;
+  padding-left: 10px;
+}
+
+.Nav-bar .judul p {
+  position: absolute;
+  margin: 5px 0px;
+}
+
+.Nav-bar .judul p .jdl_1 {
+  display: block;
+  font-family: 'Roboto';
+  font: 34px black;
+  font-weight: bolder;
+}
+
+.Nav-bar .judul p .jdl_2 {
+  font: 16px bold black;
+}
+
+footer {
+  /* Footer */
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  margin-top: 800px;
+  background: #2EB100;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+footer p {
+  /* Copyright @2021 Hamas. All Right Reserved */
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 20px;
+  color: #000000;
+}
+
+.left-panel {
+  position: absolute;
+  width: 170px;
+  height: 750px;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  background: #3f3f3f;
+}
+
+.left-panel .info-login {
+  height: 100px;
+}
+
+.left-panel .info-login img {
+  margin-top: 10px;
+  margin-left: 5px;
+  float: left;
+  border-radius: 100%;
+}
+
+.left-panel .info-login p {
+  color: white;
+  margin-top: 15px;
+  margin-left: 5px;
+  float: left;
+  font-weight: bold;
+}
+
+.left-panel a, .left-panel a:hover, .left-panel a:focus {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.left-panel ul .components {
+  padding: 20px 0;
+  border-bottom: 1px solid #47748b;
+}
+
+.left-panel ul li a {
+  padding: 10px;
+  font-size: 16px;
+  display: block;
+  color: white;
+  font-weight: bold;
+}
+
+.left-panel ul li a:hover {
+  color: black;
+  background: #0dc05e;
+}
+
+.content {
+  position: absolute;
+  width: 85%;
+  height: 100%;
+  left: 180px;
+  top: 100px;
+}
+
+.content p {
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: 24px;
+}
+
+.content .dashborad {
+  height: 200px;
+  width: 100%;
+}
+
+.content .dashborad div {
+  width: 200px;
+  height: 170px;
+  display: inline-block;
+  margin-left: 0px;
+  margin-right: 20px;
+}
+
+.content .dashborad .item-beras {
+  background-color: yellow;
+  width: 230px;
+}
+
+.content .dashborad .item-beras img {
+  width: 70px;
+  height: 70px;
+  float: right;
+  margin-top: 90px;
+  margin-left: 16px;
+}
+
+.content .dashborad .item-beras h1 {
+  float: left;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 50px;
+}
+
+.content .dashborad .item-beras h1 span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.content .dashborad .item-beras p {
+  float: left;
+  font-size: 18px;
+  margin-top: 140px;
+  margin-left: 10px;
+  position: absolute;
+}
+
+.content .dashborad .item-uang {
+  width: 290px;
+  background-color: #ff5e5e;
+}
+
+.content .dashborad .item-uang img {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  float: right;
+  margin-top: 95px;
+  margin-left: 210px;
+  display: block;
+}
+
+.content .dashborad .item-uang h1 {
+  float: left;
+  margin-top: 30px;
+  margin-left: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.content .dashborad .item-uang h1 span {
+  font-weight: normal;
+  font-size: 40px;
+}
+
+.content .dashborad .item-uang p {
+  position: absolute;
+  float: left;
+  font-size: 18px;
+  margin-top: 135px;
+  margin-left: 10px;
+}
+
+.content .dashborad .person {
+  background-color: #FFAF52;
+  width: 250px;
+}
+
+.content .dashborad .person img {
+  height: 70px;
+  width: 70px;
+  float: right;
+  margin-top: 90px;
+}
+
+.content .dashborad .person h1 {
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 50px;
+}
+
+.content .dashborad .person h1 span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.content .dashborad .person p {
+  float: left;
+  font-size: 18px;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.content .dashborad .list-confirm {
+  width: 250px;
+  background-color: #71FF7F;
+}
+
+.content .dashborad .list-confirm h1 {
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 50px;
+}
+
+.content .dashborad .list-confirm h1 span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.content .dashborad .list-confirm p {
+  float: left;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.content .dashborad .list-confirm img {
+  width: 70px;
+  height: 70px;
+  float: right;
+  margin-top: 45px;
+  margin-right: 5px;
+}
+
+.content .confirm-table {
+  float: left;
+  width: 100%;
+  height: 70%;
+  background-color: #e9e9e9;
+}
+
+.content .confirm-table .search-container {
+  float: right;
+}
+
+.content .confirm-table input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.content .confirm-table .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 9px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.content .confirm-table .search-container button:hover {
+  background: #ccc;
+}
+
+.content .confirm-table .table {
+  text-align: center;
+  margin-top: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 98%;
+}
+
+.content .confirm-table .table thead {
+  background-color: #0066FF;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.content .confirm-table .table tbody tr td {
+  font-size: 14px;
+}
+
+.content .confirm-table .table tbody button {
+  font-size: 12px;
+}
+
+.content .rekap {
+  width: 100%;
+}
+
+.content .rekap .search-container {
+  float: right;
+}
+
+.content .rekap input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+.content .rekap .search-container .filter {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  height: 40px;
+}
+.content .rekap .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.content .rekap .search-container button:hover {
+  background: #ccc;
+}
+
+.content .rekap table {
+  margin-right: 10px;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
+
+.img-btn-modif {
+  height: 30px;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.img-btn-modif:hover {
+  border:1px solid white;
+}
+
+.img-btn-del {
+  height: 30px;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.img-btn-del:hover {
+  border:1px solid white;
+}
+
+.form-edit {
+  margin-top:2%;
+  margin-left:30%;
+  width: 40%;
+  padding: 20px;
+  margin-bottom: 2%;
+}
+.form-edit label {
+  font-weight: bold;
+}

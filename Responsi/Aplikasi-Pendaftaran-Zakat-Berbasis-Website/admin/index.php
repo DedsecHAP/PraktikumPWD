@@ -68,7 +68,7 @@
                     $_SESSION['UserID'] = $username;
                     $password = crypt(validationLogin($_POST['password']), "1900018121");
                     $_SESSION['PassID'] = $password;
-                    $query = "SELECT * FROM User WHERE UserID = '$username' AND Password = '$password'";
+                    $query = "SELECT * FROM users WHERE UserID = '$username' AND Password = '$password'";
                     $result = mysqli_num_rows(mysqli_query($connect, $query));
                     if ($result)
                         echo "<script>window.location.href='../dashboard/'</script>";
